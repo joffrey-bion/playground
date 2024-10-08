@@ -18,3 +18,4 @@ plugins {
 rootProject.name = "playground"
 
 include("playground-jvm-app")
+include("playground-multiplatform")
