@@ -16,3 +16,5 @@ plugins {
 }
 
 rootProject.name = "playground"
+
+include("playground-jvm-app")
