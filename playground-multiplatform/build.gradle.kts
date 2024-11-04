@@ -15,11 +15,7 @@ kotlin {
             }
         }
     }
-    mingwX64 {
-        binaries {
-            executable()
-        }
-    }
+    mingwX64()
     
     sourceSets {
         commonMain {
