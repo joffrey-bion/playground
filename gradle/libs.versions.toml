@@ -2,7 +2,7 @@
 
 config4k = "0.6.0"
 gson = "2.10.1"
-hcl4j = "0.7.3"
+hcl4j = "0.9.4"
 hibernate = "6.2.4.Final"
 jackson = "2.18.1"
 java-websocket = "1.5.7"
