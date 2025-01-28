@@ -9,6 +9,7 @@ java-websocket = "1.6.0"
 kotlin = "2.1.10"
 kotlinx-atomicfu = "0.27.0"
 kotlinx-coroutines = "1.10.1"
+kotlinx-datetime = "0.6.1"
 kotlinx-serialization = "1.8.0"
 krossbow = "8.2.0"
 ktoml = "0.5.2"
@@ -33,6 +34,7 @@ java-websocket = { module = "org.java-websocket:Java-WebSocket", version.ref = "
 kotlinx-atomicfu = { module = "org.jetbrains.kotlinx:atomicfu", version.ref = "kotlinx-atomicfu" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
 kotlinx-serialization-hocon = { module = "org.jetbrains.kotlinx:kotlinx-serialization-hocon", version.ref = "kotlinx-serialization" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
