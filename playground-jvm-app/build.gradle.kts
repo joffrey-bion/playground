@@ -15,4 +15,5 @@ dependencies {
     implementation(libs.ktor.client.java)
     implementation(libs.ktor.client.contentNegotiation)
     implementation(libs.ktor.client.websockets)
+    implementation(libs.ktor.serialization.kotlinx.json)
 }
