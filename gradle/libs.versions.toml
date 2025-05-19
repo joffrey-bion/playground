@@ -18,7 +18,7 @@ mockk = "1.14.2"
 okhttp = "4.12.0"
 okio = "3.11.0"
 slf4j = "2.0.17"
-spring-data = "3.4.5"
+spring-data = "3.5.0"
 tomlj = "1.1.1"
 
 [libraries]
