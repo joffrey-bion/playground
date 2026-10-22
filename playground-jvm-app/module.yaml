@@ -1,0 +1,16 @@
+product: jvm/app
+
+apply:
+  - //build-templates/common.module-template.yaml
+
+settings:
+  jvm:
+    mainClass: com.example.MainKt
+
+dependencies:
+  - $libs.kotlinx.coroutines.core
+  - $libs.kotlinx.serialization.json
+  - $libs.ktor.client.java
+  - $libs.ktor.client.contentNegotiation
+  - $libs.ktor.client.websockets
+  - $libs.ktor.serialization.kotlinx.json

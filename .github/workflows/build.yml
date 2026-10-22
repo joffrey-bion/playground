@@ -9,14 +9,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up JDK
-        uses: actions/setup-java@v6
-        with:
-          distribution: 'temurin'
-          java-version: 21
+      - name: Build
+        run: ./kotlin build
 
-      - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v6.4.0
-
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Test
+        run: ./kotlin test

@@ -1,0 +1,26 @@
+name: update-kotlin-wrapper
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every night at 5am
+    - cron: "0 5 * * *"
+
+jobs:
+  update-kotlin-wrapper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Update the Kotlin wrapper
+        run: ./kotlin update
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GH_PAT }}
+          branch: update-kotlin-wrapper
+          title: Update the Kotlin Toolchain wrapper
+          commit-message: Update the Kotlin Toolchain wrapper
+          labels: dependencies, internal

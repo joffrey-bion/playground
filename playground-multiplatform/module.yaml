@@ -1,0 +1,27 @@
+product:
+  type: kmp/lib
+  platforms: [ jvm, js, mingwX64 ]
+
+apply:
+  - //build-templates/common.module-template.yaml
+
+dependencies:
+  - $libs.kotlinx.coroutines.core
+  - $libs.kotlinx.serialization.json
+  - $libs.ktor.client.core
+  - $libs.ktor.client.contentNegotiation
+  - $libs.ktor.client.websockets
+
+dependencies@jvm:
+  - $kotlin.reflect
+  - $libs.java.websocket
+  - $libs.ktor.client.java
+
+dependencies@js:
+  - $libs.ktor.client.js
+
+dependencies@mingw:
+  - $libs.ktor.client.winhttp
+
+test-dependencies:
+  - $libs.kotlinx.coroutines.test

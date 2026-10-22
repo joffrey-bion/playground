@@ -6,11 +6,10 @@ hcl4j = "0.9.8"
 hibernate = "6.2.5.Final"
 jackson = "2.22.1"
 java-websocket = "1.6.0"
-kotlin = "2.1.21"
 kotlinx-atomicfu = "0.33.0"
 kotlinx-coroutines = "1.10.2"
 kotlinx-datetime = "0.8.0-0.6.x-compat"
-kotlinx-serialization = "1.8.1"
+kotlinx-serialization = "1.11.0"
 krossbow = "10.0.0"
 ktoml = "0.7.1"
 ktor = "3.2.3"
@@ -56,8 +55,3 @@ okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
 slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
 spring-data-commons = { module = "org.springframework.data:spring-data-commons", version.ref = "spring-data" }
 tomlj = { module = "org.tomlj:tomlj", version.ref = "tomlj" }
-
-[plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
-kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
