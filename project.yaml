@@ -1,3 +1,4 @@
 modules:
   - playground-jvm-app
   - playground-multiplatform
+  - playground-wasm-app

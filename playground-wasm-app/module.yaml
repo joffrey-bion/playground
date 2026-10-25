@@ -1,0 +1,10 @@
+product: wasm-js/app
+
+apply:
+  - //build-templates/common.module-template.yaml
+
+settings:
+  jvm:
+    jdk:
+      version: 26
+  compose: enabled
